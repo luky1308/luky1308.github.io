@@ -7,6 +7,7 @@
   text-align: center;
   transition: 1s;
   transform-origin: 0;
+  top:20 px
 }
 
 .open-card {
@@ -50,8 +51,8 @@
 }
 
 #inside-pic {
-  width: 50px;
-  height: 150px;
+  width: 200px;
+  height: 250px;
 }
 
 #message {
