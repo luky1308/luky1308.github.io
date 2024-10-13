@@ -1,0 +1,53 @@
+<html>
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+  </head>
+
+  <body>
+    <iframe src="silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+    <audio id="player" autoplay loop>
+      <source src="happy.mp3" type="audio/mp3">
+  </audio>
+
+<!-- <audio autoplay>
+    <source src="happy.mp3" type="audio/mp3">
+</audio> -->
+
+    <div id="outside">
+    
+      <p id="outside-title">
+        Happy Birthday Ammamma!
+      </p>
+
+      <img id="outside-pic" src="amma_bag.jpeg">
+
+      <p>
+        <button onclick="open_card()">Click to open</button>
+      </p>
+
+    </div>
+  
+    <div id="inside">
+    
+      <p id="inside-title">
+         Happy Birthday Grandma 🎉🎂🎉🎁🎉
+      </p>
+      
+      <img id="inside-pic" src="girl.png">
+      
+      <p id="message">
+          I hope you have a great Birthday!!
+      </p>
+
+      <p>
+        <button onclick="close_card()">Click to close</button>
+      </p>
+      
+    </div>
+    
+  </body>
+ 
+</html>
