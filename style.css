@@ -65,3 +65,16 @@
 button {
   background: silver;
 }
+#p1 {
+  color:yellow;
+  background-color: black;
+  font-family: sans-serif;
+}
+
+#game1 {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  position: absolute;
+  text-align: center;
+} 
