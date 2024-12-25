@@ -14,23 +14,42 @@
 
         </p>
 
-        <div id="game1" onclick="clickme()">
-            Click me
-        </div>
+        
     
-
+        <div id="container" style="width:100%;">                                   
+          <div id="left" style="float:left; width:70%;"> 
+            <div id="game1" onclick="clickme()">
+              Click me
+          </div>
+          </div>                     
+          <div id="right" style="float:right; width:30%;"> 
+            <div id="game2">
+            Click me
+        </div> </div>                   
+        </div>       
 
  
 
 </body>
 <script>
-
+  var sentenses=["Do not distrub , I am suffering from EXAM","Sussy Sussy Baka Baka your mama is jomama","mom:who is sussybaka? me: (thinking) wait what"]
+  let colors = ["black", "white", "gray", "silver", "maroon", "red", "purple", "fushsia", "green", "lime", "olive", "yellow", "navy", "blue", "teal", "aqua"]
   function clickme() {
     var element = document.getElementById("game1");
     x=Math.floor(Math.random() * 500);
+    col=Math.floor(Math.random() * 16);
+    sens=Math.floor(Math.random() * 3);
     y= Math.floor(Math.random() * 500);
     element.style.left = x+"px";
     element.style.top = y+"px";
+    element.style.backgroundColor=colors[col]
+    var game2 = document.getElementById("game2");
+    if (colors[col]=="white") {
+      game2.innerHTML="Click me"
+    }else {
+      game2.innerHTML=sentenses[sens]
+    }
+   
   }
 
 </script>
